@@ -1,0 +1,619 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
+    <style>
+      .topnav {
+    background-color: #1a1a1a;
+    opacity: 0.8;
+    width: 100%;
+    color: #F2D8C2;
+    height: 55px;
+    
+    top: -1px;
+    overflow: hidden;
+    background: linear-gradient(to right, #111111 40%, #000 80%);
+}
+
+.topnavback {
+    background-color: #1a1a1a;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    height: 55px;
+    background: linear-gradient(to right, #111111 40%, #000 80%);
+}
+
+.hamburg {
+    color: white;
+    line-height: 3.3em;
+}
+
+body {
+    margin: 0px;
+    background-color: #000000;
+}
+
+span {
+    display: block;
+    height: 0px;
+    border: 1px solid #fdfdfd;
+    background-color: #fdfdfd;
+    margin-top: 4px;
+}
+
+span:first-child {
+    margin-top: 0px;
+}
+
+.navbtn {
+    display: none;
+}
+
+.navbtn:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.navbtn:active {
+    box-shadow: 0 0 4px #ffffff;
+    box-shadow: 0 0 10 inset;
+}
+
+.hamburg {
+    display: block;
+}
+
+.hamburg>.listnavitems {
+    display: block;
+}
+
+.hamburg>.listnavitems>a {
+    display: inline-block;
+    font-family: Courier New, Courier, monospace;
+    height: 53px;
+    position: relative;
+    text-decoration: none;
+    color: #F2e8ee;
+    padding: 1px 15px;
+}
+
+.listnavitems>a:hover {
+    animation-name: navanc;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+}
+
+.jmbbanner {
+    margin-top: 100px;
+    border-radius: 0px;
+    display: flex;
+    height: 82%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textquotes {
+    color: white;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: Courier New, Courier, monospace;
+    margin-left: 0px;
+    margin-top: 13%;
+    margin-right: 20px;
+}
+
+.container {
+    background-color: #000;
+    margin-top: 55px;
+}
+
+#logring {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 100%;
+}
+
+.logosm {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 8px;
+    left: 17px;
+    border-radius: 100%;
+}
+
+.maincontent {
+    width: 100%;
+    height: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    background: #666666;
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+
+}
+
+.footer {
+    background-color: #000;
+    height: 28%;
+    width: 100%;
+}
+
+.cpy {
+    color: #a4a4a4;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.smallbanner {
+    display: none;
+}
+
+@keyframes navanc {
+    0% {}
+    100% {
+        background-color: white;
+        color: #646464;
+        box-shadow: inset 0 0 5px #646464;
+        border-radius: 30px;
+    }
+}
+
+@media(max-width:835px) {
+    .navbtn {
+        background: linear-gradient(to top left, #2b2b2b 20%, #000000 60%, #000000 100%);
+        display: block;
+        position: absolute;
+        height: auto;
+        top: 0px;
+        right: 15px;
+        bottom: 0px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        padding: 4px;
+        border: 1px solid #2d2d2d;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #2d2d2d;
+    }
+    .hamburg {
+        position: fixed;
+        top: 55px;
+        text-align: left;
+        width: 100%;
+    }
+    .hamburg>.listnavitems>a {
+        padding-left: 5PX;
+        color: #fff;
+        font-family: Courier New, Courier, monospace;
+        font-size: 1em;
+        width: 100%;
+        display: block;
+        margin: 0px;
+    }
+    .hamburg>.listnavitems {
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 0px;
+        width: 100%;
+    }
+    .shows {
+        display: block;
+        visibility: hidden;
+    }
+    .listnavitems>a:hover {
+        animation-name: hovstyle;
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        ;
+    }
+    .topnav {
+        background-color: #1a1a1a;
+        opacity: 0.8;
+        width: 100%;
+        color: #F2D8C2;
+        height: 55px;
+        position: fixed;
+        top: 0px;
+        overflow: hidden;
+        background: linear-gradient(to right, #1a1a1a 30%, #1a1a1a 80%);
+    }
+    .topnavback {
+        background-color: #1a1a1a;
+        width: 100%;
+        overflow: hidden;
+        height: 55px;
+        background: linear-gradient(to right, #1a1a1a 50%, #1a1a1a 80%);
+    }
+    .logo {
+        display: none;
+    }
+    .logosm {
+        display: block;
+    }
+    #logring {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        width: 55px;
+        height: 55px;
+    }
+    .jmbbanner {
+        display: block;
+    }
+    .textquotes {
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #quotespic {
+        display: none;
+    }
+    .smallbanner {
+        display: block;
+        margin-top: 40px;
+        background-image: url("centrelog.jpg");
+        background-size: cover;
+        background-origin: center;
+        width: 80%;
+        height: 50%;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card1{
+        position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #FFE6E6;
+    height: 50%;
+    margin-left: 120px;
+    margin-right: auto;
+    margin-top: 82px;
+}
+}
+
+@keyframes hovstyle {
+    0% {}
+    100% {
+        background-color: #cdcdcd;
+        color: #646464;
+    }
+}
+
+.skill{
+    float: left;
+    width:400px;
+    height:100%;
+    position: relative;
+    color:black;
+    
+    
+    margin: auto;
+    }
+    .card1{
+        position: relative;
+        float: left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 360px;
+    border-radius: 5px;
+    background-color: #FFE6E6;
+    height: 500px;
+    margin-left: 120px;
+    margin-right: auto;
+    margin-top: 82px;
+}
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 14px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin-left: 118px;
+    margin-top: 20px;
+    
+}
+
+button:hover{
+    background-color: #DC143C;
+    box-shadow: 0 10px 12px 0 #1AA2C4,0 5px 11px 0
+}
+
+.button1 {
+    background-color: skyblue; 
+    color: black; 
+    
+}
+.author{
+    position: relative;
+    float: left;
+    left: 30;
+    right: 0;
+    width: 400px;
+    height: 120%;
+    
+    
+
+    
+
+
+}
+#topbar-section{
+    float: left;
+    border-left: 1px white solid;
+    height: 230px;
+
+}
+.fa-phone {
+  
+  color: white;
+}
+
+#fa1 {
+    color: #fff;
+    font-size: 1.2em;
+}
+#fa1:hover {
+    color: black;
+    font-size: 1.2em;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  display: inline;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-envelope-o{
+    color: white;
+
+}
+
+
+    </style>
+    <script>
+    $('document').ready(function() {
+    $('.navbtn').click(function() {
+        $('.listnavitems').toggleClass('shows');
+        $('.hamburg').toggleClass('shows');
+        $('listnavitems>a').toggleClass('shows');
+    });
+
+    var canvas = document.getElementById('logring');
+    var imga = document.getElementById("quotespic");
+
+
+
+
+
+    var aadj = window.innerWidth;
+    if (window.innerHeight < window.innerWidth) {
+        aadj = window.innerHeight;
+    }
+
+    if (window.innerWidth < 550) {
+        aadj = window.innerWidth;
+    }
+
+    imga.width = aadj * 0.9;
+    imga.height = aadj * 0.58;
+
+
+
+
+    window.addEventListener('resize', function() {
+        var aadj = window.innerWidth;
+        if (window.innerHeight < window.innerWidth) {
+            aadj = window.innerHeight;
+        }
+        if (window.innerWidth < 550) {
+            aadj = window.innerWidth;
+        }
+
+        imga.width = aadj * 0.9;
+        imga.height = aadj * 0.58;
+
+    });
+
+    function logoanimation() {
+
+        var c = canvas.getContext("2d");
+
+
+        c.lineWidth = "4";
+
+        var x = 0;
+        var y = 0;
+
+
+        function animate() {
+            requestAnimationFrame(animate);
+            c.clearRect(0, 0, canvas.width, canvas.height);
+
+
+            c.beginPath();
+            c.arc(canvas.width / 2, canvas.height / 2, 70, x + 0, x + 1.5 * 3.14, false);
+            c.strokeStyle = "#050259";
+            c.stroke();
+
+            c.beginPath();
+            c.arc(canvas.width / 2, canvas.height / 2, 55, y + 3.14, y + 2.5 * 3.14, false);
+            c.strokeStyle = "#1B21A6";
+            c.stroke();
+
+            c.beginPath();
+            c.arc(canvas.width / 2, canvas.height / 2, 40, x + 0, x + 1.5 * 3.14, false);
+            c.strokeStyle = "#010440";
+            c.stroke();
+
+            x += 0.05;
+            y -= 0.05;
+
+            if (x > 2 * Math.PI) {
+                x = 0;
+            }
+
+            if (y < -(2 * Math.PI)) {
+                y = 0;
+            }
+        }
+        animate();
+    }
+    logoanimation();
+
+
+});
+    
+    
+    
+		function openWin() {
+    		window.open("/programming");
+		}
+		function openWin1() {
+    		window.open("project.ejs");
+		}
+</script>
+  </head>
+  <body>
+    <div class="topnavback"></div>    
+    <nav class="topnav fixed">
+      <button class="navbtn" type="button">
+        <center><span style="width:18px"></span>                <span style="width:18px"></span>                <span style="width:18px"></span></center>
+      </button>        
+      <div class="hamburg shows">
+        <div class="listnavitems shows"><a href="/">Home</a>                <a href="programming">Challenges</a>                <a href="#">Leaderboard</a>                <a href="#">News</a>                <a href="#">About Us</a>                <a href="project">Projects</a>
+        <% if(!currentUser){ %>
+            <a href="login"><i id="fa1" class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
+            <a href="register"><i id="fa1" class="fa fa-sign-in" aria-hidden="true"></i>Register</a>
+       <% } else { %>
+             <a href="/logout"><i id="fa1" class="fa fa-sign-out" aria-hidden="true"></i>logout</a>
+             <a href="programming"><i id="fa1" class="fa fa-user" aria-hidden="true"></i><%=currentUser.username %></a>
+        <% } %>
+        
+        
+
+      </div>
+    </nav>    
+    <canvas id="logring" width="150px" height="150px"></canvas>    
+    <div class="logo"><a href="#"><img id="logpic" src="celogo.png" width="50px" height="50px"/></a></div>    
+    <div class="logosm"><a href="#"><img id="logpic" src="celogo.png" width="50px" height="40px"/></a></div>    
+    <div class="container main_container">
+      <div style="display:flex"></div>        
+      <div class="jmbbanner">
+        <div class="smallbanner"></div>            <img id="quotespic" src="centrelog.jpg"/>            
+        <div class="textquotes">If you can&apos;t remember your past<br/> then you are condemned to repeat it.<br/><br/>                <font size="3px"> -Dynamic Programming</font></div>
+      </div>        
+      <div class="maincontent">
+        <div class="skill">
+          <div class="card1"><img style="display: block;margin-right: auto;margin-left: auto;width: 100% ;height: 40%" src="coding.jpg"/>        &#x9;
+            <p style="color: #000000 ;text-align: center;line-height: 1.8;text-shadow: 0.2px 0.2px #000080;font-size: 150%">Clarify all kinds of doubts <br/> related to coding on online<br/> official  judge of VIT</p>            
+            <a href="questionshow"><input type="button" class="button button1" value="Clarify !"></a>
+          </div>
+        </div>        
+        <div class="skill">
+          <div class="card1"><img style="display: block;margin-right: auto;margin-left: auto;width: 100% ;height: 40%" src="compete.jpg"/>
+                        
+                        
+            <p style="color: #000000 ;text-align: center;line-height: 1.8;text-shadow: 0.2px 0.2px #000080;font-size: 150%">Prove your excellence <br/> coding through <br/>competative programming</p>            
+            <a href="programming"><input type="button" class="button button1" value="Compete !"></a><b><b></b></b>
+          </div><b><b></b></b>
+        </div><b><b>
+            <div class="skill">
+              <div class="card1"><img style="display: block;margin-right: auto;margin-left: auto;width: 100% ;height: 40%" src="project.jpg"/>
+                            
+                            
+                <p style="font-weight: normal; color: #000000 ;text-align: center;line-height: 1.8;text-shadow: 0.2px 0.2px #000080;font-size: 150%">Share New Project Idea <br/> And Do Projects<br/></p>            <br/>            <br/>            
+                <a href="project"><input type="button" class="button button1" value="GoIn !"></a><b><b></b></b>
+              </div><b><b></b></b>
+            </div><b><b></b></b></b></b>
+      </div><b><b><b>
+            <div class="footer">
+              <div class="author" style="align-content: center">
+                <p style="color:white; margin-left:35px; font-family:Bookman body; font-size: 150%; font-variant-alternates: normal">Authors</p>            
+                <ul type="Dot" style="color: white;font-family:Comic Sans MS;font-size: 140%;margin-left: 45px">
+                  <li>Naman Jain
+                    <p style="font-size: 60%">(IT,VIT Vellore)</p>
+                  </li>
+                </ul>
+              </div>        
+              <div id="topbar-section"></div>        
+              <div class="author">
+                <p style="margin-top:60px; color: white; font-size: 150%;font-family:Times">Contact Us</p>        
+                <div><br/></div>            <a class="fa fa-facebook" style="margin-left: 50px" href="#"></a>            <a class="fa fa-twitter" href="#"></a>            <a class="fa fa-linkedin" href="#"></a>            <a class="fa fa-instagram" href="#"></a>
+              </div>        
+              <div id="topbar-section"></div>        
+              <div class="author">
+                <p style="color: white; font-size: 150%;font-family:Times">Reach Us</p>        <i class="fa fa-phone">&nbsp; &nbsp;7530003398,9452554434</i>        
+                <div><br/></div>        
+                <p style="color: white;font-family: Comic Sans MS; font-size: 140%"><i class="fa fa-envelope-o"></i>&nbsp; codingera.contact@gmail.in</p>
+              </div>
+            </div>        
+            <hr style="text-align:center;margin-left: auto;margin-right: auto;width:100%;background-color: #B9C0C8;background:linear-gradient(to right,#111111 20%,#B9C0C8 50%,#111111 80%);border: none" size="3px "/>        
+            <div class="cpy">Copyright &copy; 2017 | ce.vit.com | All Rights Reserved | Privacy Policy &amp; Website Terms of Use</div></b></b></b>
+    </div>
+  </body>
+</html>

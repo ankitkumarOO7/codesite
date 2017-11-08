@@ -1,0 +1,316 @@
+	<html lang="en"> 
+	<head> 
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Bootstrap 101 Template</title> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+	
+	<style type="text/css"> 
+	body{ 
+	background-image: url(4.jpg); 
+	background-size: cover; 
+	color:rgb(0, 0, 0); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	background-attachment: fixed; 
+	background-origin: center; 
+	} 
+	form 
+	{ 
+	
+	padding:2px; 
+	margin-top: 41px; 
+	padding-bottom:2px; 
+
+	} 
+	h1{ 
+	text-align: center; 
+	font-size:26px; 
+	font-family: Arial; 
+	} 
+	.btn 
+	{ 
+	width:25%; 
+	margin-top: 20px; 
+	
+	} 
+	.form-group 
+	{ 
+	font-family: calibri; 
+	font-size:20px; 
+	} 
+	.topnav {
+    background-color: #1a1a1a;
+    opacity: 0.8;
+    width: 100%;
+    color: #F2D8C2;
+    height: 55px;
+    position: fixed;
+    top: -1px;
+    overflow: hidden;
+    background: linear-gradient(to right, #111111 40%, #000 80%);
+}
+
+.topnavback {
+    background-color: #1a1a1a;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    height: 55px;
+    background: linear-gradient(to right, #111111 40%, #000 80%);
+}
+
+.hamburg {
+    color: white;
+    line-height: 3.3em;
+}
+
+body {
+    margin: 0px;
+    background-color: #DCDCDC;
+}
+span {
+    display: block;
+    height: 0px;
+    border: 1px solid #fdfdfd;
+    background-color: #fdfdfd;
+    margin-top: 4px;
+}
+
+span:first-child {
+    margin-top: 0px;
+}
+
+.navbtn {
+    display: none;
+}
+
+.navbtn:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.navbtn:active {
+    box-shadow: 0 0 4px #ffffff;
+    box-shadow: 0 0 10 inset;
+}
+.hamburg {
+    display: block;
+}
+
+.hamburg>.listnavitems {
+    display: block;
+}
+
+.hamburg>.listnavitems>a {
+    display: inline-block;
+    font-family: Courier New, Courier, monospace;
+    height: 53px;
+    position: relative;
+    text-decoration: none;
+    color: #F2e8ee;
+    padding: 1px 15px;
+}
+
+.listnavitems>a:hover {
+    animation-name: navanc;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+}
+@keyframes navanc {
+    0% {}
+    100% {
+        background-color: white;
+        color: #646464;
+        box-shadow: inset 0 0 5px #646464;
+        border-radius: 30px;
+    }
+}
+@media(max-width:835px) {
+    .navbtn {
+        background: linear-gradient(to top left, #2b2b2b 20%, #000000 60%, #000000 100%);
+        display: block;
+        position: absolute;
+        height: auto;
+        top: 0px;
+        right: 15px;
+        bottom: 0px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        padding: 4px;
+        border: 1px solid #2d2d2d;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #2d2d2d;
+    }
+    .hamburg {
+        position: fixed;
+        top: 55px;
+        text-align: left;
+        width: 100%;
+    }
+    .hamburg>.listnavitems>a {
+        padding-left: 5PX;
+        color: #fff;
+        font-family: Courier New, Courier, monospace;
+        font-size: 1em;
+        width: 100%;
+        display: block;
+        margin: 0px;
+    }
+    .hamburg>.listnavitems {
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 0px;
+        width: 100%;
+    }
+    .shows {
+        display: block;
+        visibility: hidden;
+    }
+    .listnavitems>a:hover {
+        animation-name: hovstyle;
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        ;
+    }
+    .topnav {
+        background-color: #1a1a1a;
+        opacity: 0.8;
+        width: 100%;
+        color: #F2D8C2;
+        height: 55px;
+        position: fixed;
+        top: 0px;
+        overflow: hidden;
+        background: linear-gradient(to right, #1a1a1a 30%, #1a1a1a 80%);
+    }
+    .topnavback {
+        background-color: #1a1a1a;
+        width: 100%;
+        overflow: hidden;
+        height: 55px;
+        background: linear-gradient(to right, #1a1a1a 50%, #1a1a1a 80%);
+    }
+}
+@keyframes hovstyle {
+    0% {}
+    100% {
+        background-color: #cdcdcd;
+        color: #646464;
+    }
+}
+
+.container{
+    height: 600px;
+    margin-top: 54px;
+}
+#btn1{
+    padding:4px;
+    
+}
+#question{
+    border:1px solid gray;
+    padding:9px;
+    background:white;
+}
+
+/*.cl{*/
+/*    background:yellow;*/
+/*    border:2px solid red;*/
+/*}*/
+.prjt{
+    margin:auto;
+    background-color: #4682B4;
+    height: 340px;
+    width: 40%;
+    margin-left: 140px;
+    float: left;
+    margin-top: 40px;
+    padding: 10px;
+}
+#idd{
+
+textarea{
+    margin-top:-30;
+}
+
+.prjt h1{
+    font-size: 150%;
+    color: white;
+}
+.prjt textarea{
+    margin-left: 13px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 13px;
+}
+
+.button1 {border-radius: 8px; 
+}
+	</style> 
+	</head> 
+	<body> 
+	<div class="topnavback"></div>
+    <nav class="topnav fixed">
+      <button class="navbtn" type="button">
+        <center><span style="width:18px"></span>                <span style="width:18px"></span>                <span style="width:18px"></span></center>
+      </button>        
+      <div class="hamburg shows">
+        <div class="listnavitems shows"><a href="/">Home</a>                <a href="programming">Challenges</a>                <a href="#">Leaderboard</a>                <a href="#">News</a>                <a href="#">About Us</a>                <a href="project">Projects</a>
+        <% if(!currentUser){ %>
+            <a href="login"><i id="fa1" class="fa fa-sign-in" aria-hidden="true"></i>Login</a>
+            <a href="register"><i id="fa1" class="fa fa-sign-in" aria-hidden="true"></i>Register</a>
+       <% } else { %>
+             <a href="/logout">logout</a>
+             <a href="programming"><i id="fa1" class="fa fa-user" aria-hidden="true"></i><%=currentUser.username %></a>
+        <% } %>
+      </div>
+    </nav> 
+    <div class="container">
+        <div class="jumbotron">
+          <h1 class="display-3">CLEAR DOUBTS!</h1>
+          <p class="lead">Solve others doubts or ask your doubts</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="question/new" role="button">Upload</a>
+          </p>
+        </div>
+        <div id="idd" class="row">
+            <% questions.forEach(function(question){ %>
+            
+                <div class="col-sm-4 cl">
+                    <div id="question"><b><%= question.description %></b></div>
+                    
+                    <form action="#" method="POST">
+                    <div class="form-group" id="frm">
+                    <textarea name="comment" class="form-control" placeholder="comment"></textarea>
+                    <button type="submit" id="btn1" class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+            
+                </div>
+                
+            <% }); %>
+            </div>
+        </div>
+
+
+	
+</body>
+</html>
+
+

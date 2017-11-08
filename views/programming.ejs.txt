@@ -1,0 +1,298 @@
+
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+        .topnav {
+    background-color: #1a1a1a;
+    opacity: 0.8;
+    width: 100%;
+    color: #F2D8C2;
+    height: 55px;
+    position: fixed;
+    top: -1px;
+    overflow: hidden;
+    background: linear-gradient(to right, #111111 40%, #000 80%);
+}
+
+.topnavback {
+    background-color: #1a1a1a;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    height: 55px;
+    background: linear-gradient(to right, #111111 40%, #000 80%);
+}
+
+.hamburg {
+    color: white;
+    line-height: 3.3em;
+}
+
+body {
+    margin: 0px;
+    background-color: #DCDCDC;
+}
+span {
+    display: block;
+    height: 0px;
+    border: 1px solid #fdfdfd;
+    background-color: #fdfdfd;
+    margin-top: 4px;
+}
+
+span:first-child {
+    margin-top: 0px;
+}
+
+.navbtn {
+    display: none;
+}
+
+.navbtn:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.navbtn:active {
+    box-shadow: 0 0 4px #ffffff;
+    box-shadow: 0 0 10 inset;
+}
+.hamburg {
+    display: block;
+}
+
+.hamburg>.listnavitems {
+    display: block;
+}
+
+.hamburg>.listnavitems>a {
+    display: inline-block;
+    font-family: Courier New, Courier, monospace;
+    height: 53px;
+    position: relative;
+    text-decoration: none;
+    color: #F2e8ee;
+    padding: 1px 15px;
+}
+
+.listnavitems>a:hover {
+    animation-name: navanc;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+}
+@keyframes navanc {
+    0% {}
+    100% {
+        background-color: white;
+        color: #646464;
+        box-shadow: inset 0 0 5px #646464;
+        border-radius: 30px;
+    }
+}
+@media(max-width:835px) {
+    .navbtn {
+        background: linear-gradient(to top left, #2b2b2b 20%, #000000 60%, #000000 100%);
+        display: block;
+        position: absolute;
+        height: auto;
+        top: 0px;
+        right: 15px;
+        bottom: 0px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        padding: 4px;
+        border: 1px solid #2d2d2d;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #2d2d2d;
+    }
+    .hamburg {
+        position: fixed;
+        top: 55px;
+        text-align: left;
+        width: 100%;
+    }
+    .hamburg>.listnavitems>a {
+        padding-left: 5PX;
+        color: #fff;
+        font-family: Courier New, Courier, monospace;
+        font-size: 1em;
+        width: 100%;
+        display: block;
+        margin: 0px;
+    }
+    .hamburg>.listnavitems {
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 0px;
+        width: 100%;
+    }
+    .shows {
+        display: block;
+        visibility: hidden;
+    }
+    .listnavitems>a:hover {
+        animation-name: hovstyle;
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        ;
+    }
+    .topnav {
+        background-color: #1a1a1a;
+        opacity: 0.8;
+        width: 100%;
+        color: #F2D8C2;
+        height: 55px;
+        position: fixed;
+        top: 0px;
+        overflow: hidden;
+        background: linear-gradient(to right, #1a1a1a 30%, #1a1a1a 80%);
+    }
+    .topnavback {
+        background-color: #1a1a1a;
+        width: 100%;
+        overflow: hidden;
+        height: 55px;
+        background: linear-gradient(to right, #1a1a1a 50%, #1a1a1a 80%);
+    }
+}
+@keyframes hovstyle {
+    0% {}
+    100% {
+        background-color: #cdcdcd;
+        color: #646464;
+    }
+}
+
+.container{
+    height: 600px;
+    margin-top: 54px;
+}
+
+.card{
+    position: relative;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 260px;
+    border-radius: 5px;
+    background-color: #5F9EA0;
+    height: 200px;
+    margin-left: 140px;
+    margin-right: auto;
+    margin-top: 80px;
+}
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container .card h1{
+    font-weight: normal;
+    font-size: 170%;
+}
+.button {
+    border: none;
+    padding: 14px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 20px;
+
+    
+}
+
+button:hover{
+    background-color: #DC143C;
+    box-shadow: 0 10px 12px 0 #1AA2C4,0 5px 11px 0
+}
+
+.button1 {
+    background-color:#C71585; 
+    color: white; 
+  
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="topnavback"></div>
+    <nav class="topnav fixed">
+
+
+        <button type="button" class="navbtn">
+            <center> <span style="width:18px"></span>
+                <span style="width:18px"></span>
+                <span style="width:18px"></span>
+                </center>
+        </button>
+        <div class="hamburg shows">
+            <div class="listnavitems shows">
+
+                <a href="/">Home</a>
+                <a href="programming">Challenges</a>
+                <a href="#">Leaderboard</a>
+                <a href="#">News</a>
+                <a href="#">About Us</a>
+                <a href="project">Projects</a>
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <br>
+           <h1>&nbsp&nbsp&nbsp&nbsp&nbspALGORITHMS</h1>
+           <button class="button button1" onclick="#"><b>Solve !<b></button>
+        </div>
+
+        <div class="card">
+            <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDATA<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSTRUCTURE</h1>
+            <button class="button button1" onclick="#"><b>Solve !<b></button>
+        </div>
+
+        <div class="card">
+        <br>
+            <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPYTHON</h1>
+            <button class="button button1" onclick="#"><b>Solve !<b></button>
+        </div>
+
+        <div class="card">
+            <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspARTIFICIAL<br>&nbsp&nbsp&nbsp&nbspINTELLIGENCE</h1>
+            <button class="button button1" onclick="#"><b>Solve !<b></button>
+        </div>
+
+        <div class="card">
+            <h1>&nbsp&nbsp&nbsp&nbspMATHEMATICS</h1>
+            <button class="button button1" onclick="#"><b>Solve !<b></button>
+        </div>
+        
+        <div class="card">
+            <h1>&nbsp&nbspMISCELLANEOUS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPROBLEMS</h1>
+            <button class="button button1" onclick="#"><b>Solve !<b></button>
+        </div>
+        
+    </div>
+
+        
+
+        
+
+
+</body>
+
+
+</html>
